@@ -1,15 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun Facts About Dogs</title>
     <style>
         body {
             background-color: #f0f8ff;
             margin: 0;
             padding: 20px;
+            font-family: Arial, sans-serif;
         }
         h1 {
             color: #ff4500;
             text-align: center;
+            margin-bottom: 20px;
         }
         p {
             font-size: 18px;
@@ -36,6 +41,7 @@
             max-width: 100%; 
             height: 500px; 
             display: block; 
+            margin: 10px 0;
         }
         footer {
             margin-top: 20px;
@@ -43,20 +49,49 @@
             font-size: 14px; 
             color: #666; 
         }
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .care-tips {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc; 
+            background-color: #e9f5ff; 
+        }
+        .care-tips h2 {
+            color: #28a745;
+        }
     </style>
 </head>
 <body>
     <h1>Fun Facts About Dogs</h1>
-    <p>Dogs are known as man's best friend. Here are some interesting facts:</p>
-    <ul>
-        <li>Dogs have a sense of smell that is 40 times better than humans.</li>
-        <li>There are over 340 different dog breeds worldwide.</li>
-        <li>The Basenji dog is known as the "barkless dog" because it doesn't bark.</li>
-        <li>Dogs can understand up to 165 words, signs, and signals.</li>
-        <li>The world's largest dog breed is the Great Dane.</li>
-    </ul>
+    <nav>
+        <a href="#facts">Dog Facts</a>
+        <a href="#breeds">Popular Breeds</a>
+        <a href="#care">Dog Care Tips</a>
+    </nav>
+    <section id="facts">
+        <p>Dogs are known as man's best friend. Here are some interesting facts:</p>
+        <ul>
+            <li>Dogs have a sense of smell that is 40 times better than humans.</li>
+            <li>There are over 340 different dog breeds worldwide.</li>
+            <li>The Basenji dog is known as the "barkless dog" because it doesn't bark.</li>
+            <li>Dogs can understand up to 165 words, signs, and signals.</li>
+            <li>The world's largest dog breed is the Great Dane.</li>
+        </ul>
+    </section>
 
-    <div class="breed-section">
+    <div class="breed-section" id="breeds">
         <h2>Popular Dog Breeds</h2>
         <p>Here are a few popular dog breeds along with their pictures:</p>
         <h3>Labrador Retriever</h3>
@@ -70,6 +105,17 @@
         <h3>Bulldog</h3>
         <img src="https://plus.unsplash.com/premium_photo-1722859221349-26353eae4744" alt="Bulldog" class="dog-image">
         <p>Bulldogs are docile, willful, and friendly. They are known for their loose, wrinkled skin and distinctive pushed-in nose.</p>
+    </div>
+
+    <div class="care-tips" id="care">
+        <h2>Dog Care Tips</h2>
+        <ul>
+            <li>Ensure regular exercise to keep your dog healthy and happy.</li>
+            <li>Provide a balanced diet suitable for your dog’s breed and age.</li>
+            <li>Regular grooming is essential to maintain their coat and hygiene.</li>
+            <li>Schedule routine vet check-ups for vaccinations and health assessments.</li>
+            <li>Socialize your dog early to promote good behavior around other pets and people.</li>
+        </ul>
     </div>
 
     <footer>
